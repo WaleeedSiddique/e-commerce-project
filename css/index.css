@@ -18,15 +18,14 @@ a{text-decoration: none;color: black;}
     font-family: 'Nunito', sans-serif;
 }
 
-.left-nav ul{
+.left-nav>ul{
     display: flex;
     list-style: none;
     /* justify-content: space-around; */
     padding: 15px 0px;
     font-weight: 500;
-    position: relative;
 }
-.left-nav ul li{
+.left-nav>ul>li{
     padding: 10px;
 }
 .right-nav{
@@ -100,16 +99,26 @@ a{text-decoration: none;color: black;}
     background-color: aqua;
     width: auto;
     height: auto;
-    visibility: hidden;
+    /* visibility: hidden; */
     position: absolute;
+    left: -1000px;
     z-index: 100;
     display: flex;
     padding: 10px 0px;
-    text-align: center;
+    /* opacity: -1; */
+    transition: ease-in 2s;
+    /* text-align: center; */
+}
+.show-dropdown{
+    left: 500px;
 }
 .dropdown-menu-first ul{
  display: flex;
  width: auto;
- padding: 40px 60px 30px 60px;
+ padding: 40px 60px 10px 60px;
  flex-direction: column;
+ list-style: none;
+}
+.dropdown-menu-first ul li{
+    padding:15px 0px;
 }
