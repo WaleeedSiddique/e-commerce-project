@@ -1,3 +1,9 @@
+:root{
+    --most-used-clr:black;
+    --local-clr:white;
+}
+
+
 *{margin: 0;padding: 0;box-sizing: border-box;}
 .swiper{width: auto;height: fit-content;}
 .swiper-wrapper img{width: 100%;}
@@ -5,7 +11,7 @@ a{text-decoration: none;color: black;}
 .logo{font-family: 'Pacifico', cursive;padding-left: 7px;}
 .logo sup{margin-left: -16px;}
 .left-nav{ display: inline-block;}
-
+body{font-family: 'Nunito', sans-serif; }
 /* one liner end */
 
 
@@ -15,7 +21,7 @@ a{text-decoration: none;color: black;}
     display: flex;
     padding: 10px 0px;
     justify-content: space-between;
-    font-family: 'Nunito', sans-serif;
+    
 }
 
 .left-nav>ul{
@@ -99,7 +105,7 @@ i:hover{
 /* dropdown work start  */
 
 .dropdown-menu{
-    background-color: grey;
+    background-color: rgb(174, 169, 169);
     width: auto;
     height: auto;
     position: absolute;
@@ -121,4 +127,53 @@ i:hover{
 }
 .dropdown-menu-first ul li{
     padding: 10px 0px;
+}
+
+.main-top-products{
+    height: 90vh;
+    display: flex;
+    padding: 40px 20px ;
+} .main-top-products a{flex: 1;}
+.left-top-products{
+    background-image: url("../images/built-in-kitchen-category-banner-1.webp");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    padding: 20px;
+}
+.right-top-products{
+    flex: 1;
+    height: auto;
+}
+.box-1-right-products{
+    background: url("../images/washing-machine-catgory-banner-1.webp");
+    height: 49.5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.box-2-right-products{
+    background-image: url("../images/geyser-category-banner-1-1.webp");
+    height: 49%;
+    margin-top: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.left-top-products button , .box-1-right-products button , .box-2-right-products button{
+    background-color: var(--local-clr);
+    color: var(--most-used-clr);
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+.main-top-products  a:hover button{
+    cursor: pointer;
+    color: var(--local-clr);
+    background-color: var(--most-used-clr);
 }
