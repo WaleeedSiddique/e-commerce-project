@@ -1,6 +1,9 @@
 :root{
     --most-used-clr:black;
     --local-clr:white;
+    --image-border-clr:#dcdcdc;
+    --sale-clr:#93af76;
+    --btn-clr:#c41230;
 }
 
 
@@ -91,7 +94,7 @@ i:hover{
     width: 50px;
     padding: 5px 0px;
     color: white;
-    background-color: black;
+    background-color: var(--most-used-clr);
     border-radius: 0% 5px 5px 0%;
 }
 .cross{
@@ -129,11 +132,13 @@ i:hover{
     padding: 10px 0px;
 }
 
+/* new arrival section  */
 .main-top-products{
     height: 90vh;
     display: flex;
     padding: 40px 20px ;
-} .main-top-products a{flex: 1;}
+} 
+.main-top-products a{flex: 1;}
 .left-top-products{
     background-image: url("../images/built-in-kitchen-category-banner-1.webp");
     height: 100%;
@@ -172,8 +177,158 @@ i:hover{
     font-size: 16px;
     border: none;
 }
-.main-top-products  a:hover button{
+.main-top-products>a:hover button{
     cursor: pointer;
     color: var(--local-clr);
     background-color: var(--most-used-clr);
+}
+.new-arrival-section{
+    padding: 20px 30px;
+}
+.products-container{
+    display: flex;
+    padding: 30px 20px;
+}
+.box1, .box2, .box3, .box4{
+    flex: 1;
+    overflow: hidden;
+    height: 380px;
+    position: relative;
+}
+.products-container img{
+    height: 300px;
+    width: 250px;
+    border: 1px solid var(--image-border-clr);
+    padding: 10px;
+}
+.price{
+    color: rgb(173, 174, 175);
+}
+.Add-cart-button{
+    background-color: var(--most-used-clr);
+    color: var(--local-clr) !important; 
+    padding: 10px;
+    /* margin-top: 20px;   */
+    position: absolute;  
+    top: 400px;
+    left: -20px;
+    transition: all 0.5s;
+    border-radius: 5px;
+} 
+.box4:hover .price{
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+.box4:hover .Add-cart-button{
+    top: 340px;
+    transform: translateX(20px);
+}
+.box3:hover .price{
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+.box3:hover .Add-cart-button{
+    top: 340px;
+    transform: translateX(20px);
+}
+.box2:hover .price{
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+.box2:hover .Add-cart-button{
+    top: 340px;
+    transform: translateX(20px);
+}
+.box1:hover .price{
+    transform: translateY(50px);
+    transition: all 2s;
+}
+.box1:hover .Add-cart-button{
+    top: 340px;
+    transform: translateX(20px);
+}
+
+/* feature section work  */
+.box1-feature, .box2-feature, .box3-feature, .box4-feature{
+    flex: 1;
+    overflow: hidden;
+    height: 380px;
+    position: relative;
+    cursor: pointer;
+}
+.box4-feature:hover .price{
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+.box4-feature:hover .Add-cart-button{
+    top: 340px;
+    transform: translateX(20px);
+}
+.box3-feature:hover .price{
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+.box3-feature:hover .Add-cart-button{
+    top: 340px;
+    transform: translateX(20px);
+}
+.box2-feature:hover .price{
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+.box2-feature:hover .Add-cart-button{
+    top: 340px;
+    transform: translateX(20px);
+}
+.box1-feature:hover .price{
+    transform: translateY(50px);
+    transition: all 0.5s;
+   
+}
+.box1-feature:hover .Add-cart-button{
+    top: 340px;
+    transform: translateX(20px);
+}
+.sale-tag{
+    background-color: var(--sale-clr) ;
+    font-size: 14px;
+    padding: 4px 7px;
+    display: inline-block;
+    color: var(--local-clr);
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.sales-image{
+    height: auto;
+    width: auto;
+    position: relative;
+}
+.image-container img{
+    height: 50%;
+    width: 100%;
+    opacity: 0.7;
+}
+.content-sales{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.content-sales h5{
+    color: grey;
+}
+.content-sales h2{
+    font-size: 35px;
+}
+.content-sales button{
+    background-color: var(--btn-clr);
+    color: var(--local-clr) !important;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;    
+}
+.content-sales a{
+    color: var(--local-clr) !important;
 }
