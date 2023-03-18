@@ -4,6 +4,7 @@
     --image-border-clr:#dcdcdc;
     --sale-clr:#93af76;
     --btn-clr:#c41230;
+    --search-footer-clr:#efede9;
 }
 
 
@@ -15,6 +16,7 @@ a{text-decoration: none;color: black;}
 .logo sup{margin-left: -16px;}
 .left-nav{ display: inline-block;}
 body{font-family: 'Nunito', sans-serif; }
+ul{list-style: none;}
 /* one liner end */
 
 
@@ -65,7 +67,8 @@ i:hover{
 /* Search work start */
 
 #search-bar{
- background-color: rgb(174, 169, 169);
+ background-color: var(--search-footer-clr);
+ height: 50vh;;
  height: 40vh;
  width: 100%;
  text-align: center;
@@ -75,7 +78,7 @@ i:hover{
  position: absolute;
  top: -500px;
  z-index: 10;
- transition: all 2s;
+ transition: all 1s;
  
 }
 #search-bar input{
@@ -108,7 +111,8 @@ i:hover{
 /* dropdown work start  */
 
 .dropdown-menu{
-    background-color: rgb(174, 169, 169);
+    background-color: var(--search-footer-clr);
+    height: 50vh;;
     width: auto;
     height: auto;
     position: absolute;
@@ -116,7 +120,7 @@ i:hover{
     z-index: 100;
     display: flex;
     padding: 10px 0px;
-    transition: ease-in 2s;
+    transition: ease-in 1s;
 }
 .show-dropdown{
     left: 500px;
@@ -304,6 +308,7 @@ i:hover{
     height: auto;
     width: auto;
     position: relative;
+    padding: 20px;
 }
 .image-container img{
     height: 50%;
@@ -312,8 +317,8 @@ i:hover{
 }
 .content-sales{
     position: absolute;
-    top: 20px;
-    left: 30px;
+    top: 50px;
+    left: 60px;
 }
 .content-sales h5{
     color: grey;
@@ -327,8 +332,85 @@ i:hover{
     font-weight: bold;
     border: none;
     padding: 15px;
-    margin-top: 10px;    
+    margin-top: 10px;
+    transition: 1s;
 }
 .content-sales a{
     color: var(--local-clr) !important;
+}
+.sales-image:hover{
+    cursor: pointer;
+}
+.content-sales button:hover{
+    background-color: #880b1f;
+}
+
+/* footer */
+
+.footer-main-container{
+  background-color: var(--search-footer-clr);
+  /* height: 50vh; */
+  width: auto;
+  padding: 50px ;
+  position: relative;
+}
+.icons-container{
+    /* float: right; */
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+.icons-container span{
+    padding-right: 12px;
+    font-size: 20px;
+}
+.sub-footer{
+    display: flex;
+    height: auto;
+    width: auto;
+    padding: 35px 0;
+    font-size: 14px;
+}
+.first{
+    flex: 1;
+    margin-right: 20px;
+}
+.second{
+    flex: 1;
+    margin-right: 20px;
+}
+.third{
+    flex: 1;
+}
+.first div{
+    padding: 0px 15px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.second div{
+    padding: 0px 15px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.third div{
+    padding: 0px 15px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.footer-main-container h5{
+    padding: 15px 0px;
+    border-bottom: 1px solid black ;
+    font-weight: bold;
+    font-size: 15px;
+}
+.footer-main-container div ul li{
+    padding-bottom: 8px;
+}
+.footer-main-container div ul li:hover{
+    cursor: pointer;
+    color: #8f8b8b;
+    transition: 1s;
 }
