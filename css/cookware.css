@@ -13,7 +13,7 @@
 }
 
 #products>h1 {
-    /* font-size: 3.1rem; */
+    font-size: 3.1rem;
     text-align: center;
     padding: 30px 0;
 }
@@ -28,13 +28,13 @@
 
 .cook-ware-items{
     font-family: 'Nunito', sans-serif;
-    /* font-size: 0.9rem; */
+    font-size: 0.9rem;
     font-weight: 500;
 }
 
 .cook-ware-items i{
     color:rgb(65, 65, 65);
-    /* font-size: 0.7rem; */
+    font-size: 0.7rem;
     opacity: 0.7;
 }
 
@@ -53,18 +53,18 @@
 }
 
 .product-img:hover {
-    box-shadow: 0 0 5px #747474;
+    box-shadow: 0 0 3px #747474;
     transition: 0.2s;
 }
 
 .product-img img {
-    width: 140px;
+    width: 150px;
 }
 
-.product-img:hover img {
+/* .product-img:hover img {
     transform: scale(1.005);
-    transition: all 0.2s;
-}
+    transition: all 0.5s
+} */
 
 .price {
     margin: 5px 0;
@@ -72,7 +72,7 @@
 }
 
 .price-cart {
-    width: 100px;
+    width: 150px;
     height: 40px;
     overflow: hidden;
 }
@@ -80,7 +80,7 @@
 .btn {
     background-color: #000000;
     color: white;
-    /* font-size: 0.7rem; */
+    font-size: 0.7rem;
     font-weight: 600;
     padding: 8px;
     border: none;
