@@ -197,11 +197,13 @@ i:hover{
     flex: 1;
     overflow: hidden;
     height: 380px;
+    width: auto;
+    padding-right: 10px;
     position: relative;
 }
 .products-container img{
     height: 300px;
-    width: 250px;
+    width: 100%;
     border: 1px solid var(--image-border-clr);
     padding: 10px;
 }
@@ -251,12 +253,17 @@ i:hover{
     top: 340px;
     transform: translateX(20px);
 }
-
+.image-container{
+    width: auto;
+    height: 100%;
+}
 /* feature section work  */
 .box1-feature, .box2-feature, .box3-feature, .box4-feature{
     flex: 1;
     overflow: hidden;
     height: 380px;
+    padding-right: 10px;
+    width: auto;
     position: relative;
     cursor: pointer;
 }
@@ -351,14 +358,15 @@ i:hover{
   background-color: var(--search-footer-clr);
   /* height: 50vh; */
   width: auto;
+  height: auto;
   padding: 50px ;
-  position: relative;
+  /* position: relative; */
 }
 .icons-container{
     /* float: right; */
-    position: absolute;
-    right: 40px;
-    top: 30px;
+    /* position: absolute; */
+    /* right: 40px; */
+    /* top: 30px; */
 }
 .icons-container span{
     padding-right: 12px;
@@ -373,11 +381,11 @@ i:hover{
 }
 .first{
     flex: 1;
-    margin-right: 20px;
+    padding-right: 10px;
 }
 .second{
     flex: 1;
-    margin-right: 20px;
+    padding-right: 10px;
 }
 .third{
     flex: 1;
