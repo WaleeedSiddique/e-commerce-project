@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Basic&family=Nunito&family=Rajdhani&family=Ubuntu&display=swap');
 
-    /* font-family: 'Basic', sans-serif;
+/* font-family: 'Basic', sans-serif;
     font-family: 'Nunito', sans-serif;
     font-family: 'Ubuntu', sans-serif; 
     font-family: 'Rajdhani', sans-serif; */
@@ -13,8 +13,9 @@
 
 }
 
-body{
+body {
     font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
 }
 
 #products>h1 {
@@ -25,20 +26,21 @@ body{
 
 #cook-ware {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit,170px);
+    justify-content: center;
     grid-gap: 25px;
-    margin: 0 50px;
+    margin: 0 30px;
 }
 
-
-.cook-ware-items{
+.cook-ware-items {
     font-family: 'Nunito', sans-serif;
     /* font-size: 16px; */
     font-weight: 500;
+    width: 170px;
 }
 
-.cook-ware-items i{
-    color:rgb(0, 0, 0);
+.cook-ware-items i {
+    color: rgb(0, 0, 0);
     font-size: 0.7rem;
     opacity: 0.7;
 }
@@ -53,7 +55,6 @@ body{
     border-radius: 3px;
     margin: 0 0 20px 0;
     transition: all 0.5s;
-
 }
 
 .product-img:hover {
@@ -124,6 +125,6 @@ body{
 
 /*........Washing Machine CSS.......*/
 
-.w-m-size{
+.w-m-size {
     width: 90px !important;
 }
