@@ -25,9 +25,10 @@ body{
 
 #cook-ware {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit,170px);
+    justify-content: center;
     grid-gap: 25px;
-    margin: 0 50px;
+    margin: 0 30px;
 }
 
 
