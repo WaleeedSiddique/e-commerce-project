@@ -2,6 +2,7 @@ var searchInput = document.getElementById("search-bar")
 var dropmenu = document.getElementById("dropdown") 
 function displaySearch(){
     searchInput.style.top = "0"
+    console.log("whtever")
 }
 function closeSearchbar(){
     searchInput.style.top = "-500px"
