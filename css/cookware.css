@@ -27,7 +27,7 @@ body{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 25px;
-    margin: 0 50px;
+    margin: 0 30px;
 }
 
 
@@ -52,13 +52,12 @@ body{
     border: 1px solid #e2e2e2;
     border-radius: 3px;
     margin: 0 0 20px 0;
-    transition: all 0.5s;
 
 }
 
 .product-img:hover {
     box-shadow: 0 0 5px #62626261;
-    transition: all 0.5s;
+    transition: all 0.4s;
 }
 
 .product-img img {
@@ -113,9 +112,25 @@ body{
     transition: all 0.4s;
 }
 
+/*..........Refrigerator..........*/
+
 .freezer {
     aspect-ratio: 3/2;
     object-fit: contain;
     width: 207px !important;
     height: 180px;
+}
+
+/*............Bread Maker........*/
+
+.bread-maker{
+    width: 130px !important;
+}
+
+/*...........Cofee Maker.........*/
+
+.cofee-maker img{
+    aspect-ratio: 3/2;
+    width: 130px !important;
+    height: 160px;
 }
