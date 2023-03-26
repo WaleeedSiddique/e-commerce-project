@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.main-form-container{
+    background-image: linear-gradient(170deg,white 50%, #efede9 50%);
+}
+.form-container{
+    width: auto;
+    height: 70vh;
+    display: flex;
+     padding:0px 60px 0px 60px ;
+     justify-content: center;
+}
+.form{
+    width: fit-content;
+    background-color: white;
+    padding: 70px;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid grey;
+    padding-left:10px;
+    background-color: inherit;
+    height: 20px;
+    font-size: 15px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+.submit-btn{
+    background-color: #dcdcdc;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+}
+.form>h2{
+    padding-bottom: 15px;
+    color: #dcdcdc;
+}
+iframe{
+    width: 450px;
+    height: 90%;
+    margin-top: 45px;
+}
