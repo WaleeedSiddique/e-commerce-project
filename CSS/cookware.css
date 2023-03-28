@@ -26,7 +26,7 @@ body {
 
 #cook-ware {
     display: grid;
-    grid-template-columns: repeat(auto-fit,170px);
+    grid-template-columns: repeat(auto-fit,250px);
     justify-content: center;
     grid-gap: 25px;
     margin: 0 30px;
@@ -46,8 +46,8 @@ body {
 }
 
 .product-img {
-    width: 170px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -57,14 +57,17 @@ body {
     transition: all 0.5s;
 }
 
+
+.product-img img {
+    width: 200px;
+}
+
+
 .product-img:hover {
     box-shadow: 0 0 5px #62626261;
     transition: all 0.5s;
 }
 
-.product-img img {
-    width: 150px;
-}
 
 /* .product-img:hover img {
     transform: scale(1.005);
@@ -125,6 +128,6 @@ body {
 
 /*........Washing Machine CSS.......*/
 
-.w-m-size {
+/* .w-m-size {
     width: 90px !important;
-}
+} */
