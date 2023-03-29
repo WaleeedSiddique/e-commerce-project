@@ -25,7 +25,7 @@ body{
 
 #cook-ware {
     display: grid;
-    grid-template-columns: repeat(auto-fit,170px);
+    grid-template-columns: repeat(auto-fit,250px);
     justify-content: center;
     grid-gap: 25px;
     margin: 0 30px;
@@ -45,6 +45,24 @@ body{
 }
 
 .product-img {
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    margin: 0 0 20px 0;
+    transition: all 0.5s;
+}
+.product-img img {
+    width: 200px;
+}
+
+/* .product-img img {
+    width: 150px;
+} */
+/* .product-img {
     width: 170px;
     height: 200px;
     justify-content: center;
@@ -53,17 +71,13 @@ body{
     border: 1px solid #e2e2e2;
     border-radius: 3px;
     margin: 0 0 20px 0;
-
-}
+} */
 
 .product-img:hover {
     box-shadow: 0 0 5px #62626261;
     transition: all 0.4s;
 }
 
-.product-img img {
-    width: 150px;
-}
 
 /* .product-img:hover img {
     transform: scale(1.005);
@@ -122,16 +136,22 @@ body{
     height: 180px;
 }
 
+/*............Ice Cream Maker.........*/
+
+.ice-cream-maker{
+    width: 130px !important;
+}
+
 /*............Bread Maker........*/
 
 .bread-maker{
-    width: 130px !important;
+    width: 170px !important;
 }
 
 /*...........Cofee Maker.........*/
 
 .cofee-maker img{
-    aspect-ratio: 3/2;
-    width: 130px !important;
-    height: 160px;
+   
+    width: 120px !important;
+   
 }
