@@ -329,7 +329,7 @@ i:hover{
     padding: 20px;
 }
 .image-container img{
-    height: 50%;
+    height: auto;
     width: 100%;
     opacity: 0.7;
 }
