@@ -26,6 +26,11 @@ ul{list-style: none;}
     display: flex;
     padding: 10px 0px;
     justify-content: space-between;
+    z-index: 2000;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    transition: all 1s;
     
 }
 
@@ -89,6 +94,7 @@ i:hover{
  top: -500px;
  z-index: 10;
  transition: all 1s;
+ z-index: 2500;
  
 }
 #search-bar input{
@@ -225,10 +231,8 @@ i:hover{
     background-color: var(--most-used-clr);
     color: var(--local-clr) !important; 
     padding: 10px;
-    /* margin-top: 20px;   */
     position: relative; 
     top: 40px;
-    /* left: -20px; */
     transition: all 0.5s;
     border-radius: 5px;
 } 
