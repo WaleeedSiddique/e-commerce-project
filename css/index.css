@@ -4,6 +4,7 @@
     --image-border-clr:#dcdcdc;
     --sale-clr:#93af76;
     --btn-clr:#c41230;
+    --search-footer-clr:#efede9;
 }
 
 
@@ -15,6 +16,7 @@ a{text-decoration: none;color: black;}
 .logo sup{margin-left: -16px;}
 .left-nav{ display: inline-block;}
 body{font-family: 'Nunito', sans-serif; }
+ul{list-style: none;}
 /* one liner end */
 
 
@@ -65,7 +67,8 @@ i:hover{
 /* Search work start */
 
 #search-bar{
- background-color: rgb(174, 169, 169);
+ background-color: var(--search-footer-clr);
+ height: 50vh;;
  height: 40vh;
  width: 100%;
  text-align: center;
@@ -75,7 +78,7 @@ i:hover{
  position: absolute;
  top: -500px;
  z-index: 10;
- transition: all 2s;
+ transition: all 1s;
  
 }
 #search-bar input{
@@ -83,14 +86,14 @@ i:hover{
     height: 42px;
     font-size: 20px;
     padding: 10px 5px;
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
     border: none;
     border-bottom: 3px solid grey;
 }
 .search-icon{
     position: absolute;
-    right: 285px;
-    height: 41px;
+    /* right: 270px; */
+    height: 42px;
     width: 50px;
     padding: 5px 0px;
     color: white;
@@ -108,28 +111,30 @@ i:hover{
 /* dropdown work start  */
 
 .dropdown-menu{
-    background-color: rgb(174, 169, 169);
+    background-color: var(--search-footer-clr);
+    height: 50vh;;
     width: auto;
     height: auto;
     position: absolute;
-    left: -1000px;
+    opacity: 0;
     z-index: 100;
     display: flex;
     padding: 10px 0px;
-    transition: ease-in 2s;
+    transition: ease-in 1s;
 }
 .show-dropdown{
-    left: 500px;
+    opacity: 1;
 }
 .dropdown-menu-first ul{
  display: flex;
  width: auto;
- padding: 40px 60px 0px 60px;
+ padding: 20px 60px 0px 50px;
  flex-direction: column;
  list-style: none;
 }
 .dropdown-menu-first ul li{
     padding: 10px 0px;
+    border-bottom: 1px solid black;
 }
 
 /* new arrival section  */
@@ -140,7 +145,7 @@ i:hover{
 } 
 .main-top-products a{flex: 1;}
 .left-top-products{
-    background-image: url("../images/built-in-kitchen-category-banner-1.webp");
+    background-image: url("../images/built-in-kitchen-category-banner-1.png");
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -153,14 +158,14 @@ i:hover{
     height: auto;
 }
 .box-1-right-products{
-    background: url("../images/washing-machine-catgory-banner-1.webp");
+    background: url("../images/washing-machine-catgory-banner-1.jpg");
     height: 49.5%;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
 }
 .box-2-right-products{
-    background-image: url("../images/geyser-category-banner-1-1.webp");
+    background-image: url("../images/geyser-category-banner-1-1.jpg");
     height: 49%;
     margin-top: 10px;
     background-size: cover;
@@ -177,7 +182,7 @@ i:hover{
     font-size: 16px;
     border: none;
 }
-.main-top-products>a:hover button{
+.main-top-products a:hover button{
     cursor: pointer;
     color: var(--local-clr);
     background-color: var(--most-used-clr);
@@ -193,11 +198,13 @@ i:hover{
     flex: 1;
     overflow: hidden;
     height: 380px;
+    width: auto;
+    padding-right: 10px;
     position: relative;
 }
 .products-container img{
     height: 300px;
-    width: 250px;
+    width: 100%;
     border: 1px solid var(--image-border-clr);
     padding: 10px;
 }
@@ -247,12 +254,17 @@ i:hover{
     top: 340px;
     transform: translateX(20px);
 }
-
+.image-container{
+    width: auto;
+    height: 100%;
+}
 /* feature section work  */
 .box1-feature, .box2-feature, .box3-feature, .box4-feature{
     flex: 1;
     overflow: hidden;
     height: 380px;
+    padding-right: 10px;
+    width: auto;
     position: relative;
     cursor: pointer;
 }
@@ -304,6 +316,7 @@ i:hover{
     height: auto;
     width: auto;
     position: relative;
+    padding: 20px;
 }
 .image-container img{
     height: 50%;
@@ -312,8 +325,8 @@ i:hover{
 }
 .content-sales{
     position: absolute;
-    top: 20px;
-    left: 30px;
+    top: 50px;
+    left: 60px;
 }
 .content-sales h5{
     color: grey;
@@ -327,8 +340,86 @@ i:hover{
     font-weight: bold;
     border: none;
     padding: 15px;
-    margin-top: 10px;    
+    margin-top: 10px;
+    transition: 1s;
 }
 .content-sales a{
     color: var(--local-clr) !important;
+}
+.sales-image:hover{
+    cursor: pointer;
+}
+.content-sales button:hover{
+    background-color: #880b1f;
+}
+
+/* footer */
+
+.footer-main-container{
+  background-color: var(--search-footer-clr);
+  /* height: 50vh; */
+  width: auto;
+  height: auto;
+  padding: 50px ;
+  /* position: relative; */
+}
+/* .icons-container{
+    float: right; */
+    /* position: absolute; */
+    /* right: 40px; */
+    /* top: 30px;
+} */
+.icons-container span{
+    padding-right: 12px;
+    font-size: 20px;
+}
+.sub-footer{
+    display: flex;
+    height: auto;
+    width: auto;
+    padding: 35px 0;
+    font-size: 14px;
+}
+.first{
+    flex: 1;
+    padding-right: 10px;
+}
+.second{
+    flex: 1;
+    padding-right: 10px;
+}
+.third{
+    flex: 1;
+}
+.first div{
+    padding: 0px 15px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.second div{
+    padding: 0px 15px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.third div{
+    padding: 0px 15px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.footer-main-container h5{
+    padding: 15px 0px;
+    border-bottom: 1px solid black ;
+    font-weight: bold;
+    font-size: 15px;
+}
+.footer-main-container div ul li{
+    padding-bottom: 8px;
+}
+.footer-main-container div ul li:hover{
+    cursor: pointer;
+    color: #8f8b8b;
+    transition: 1s;
 }

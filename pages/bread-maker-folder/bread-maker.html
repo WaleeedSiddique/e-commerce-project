@@ -9,11 +9,95 @@
     <link rel="stylesheet" href="/CSS/utilities.css">
     <link rel="icon" href="/images/tasha-title-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
+
+    <div class="nav">
+        <a class="logo" href="#">
+          <h1>Tashi <sup><i class="fa-solid fa-star fa-sm"></i></sup></h1>
+        </a>
+        <div class="left-nav">
+          <ul>
+            <li> <a href="">Home Tashi® </a></li>
+            <li onclick="displayDropdown()"> <a href="">Products </a><i class="fa-solid fa-angle-down fa-1x"></i>
+              <div class="dropdown-menu" id="dropdown">
+                <div class="dropdown-menu-first">
+                  <ul>
+                    <h4><a href=""> Cookware~</a></h4>
+                    <li><a href=""> Pots </a></li>
+                    <li><a href=""> Pans </a></li>
+                    <li><a href="">Frying Pans </a></li>
+                    <li><a href="">Cookware Sets </a></li>
+                    <li><a href="">Handis </a></li>
+                    <li><a href="">Kadais </a></li>
+                    <li><a href="">Grill pains </a></li>
+                    <li><a href="">Tawas </a></li>
+                  </ul>
+                  <ul>
+                    <h4><a href=""> Refrigerations~</a><a href=""></h4>
+                    <li><a href=""> Freezers</a><a href=""></li>
+                    <li><a href=""> Refrigerators</a><a href=""></li>
+                  </ul>
+                </div>
+                <div class="dropdown-menu-first">
+    
+                  <ul>
+                    <h4><a href="">Appliances </a></h4>
+                    <li><a href="">Bread Maker</a></li>
+                    <li><a href="">Coffee Maker</a></li>
+                    <li><a href="">Ice-cream Maker</a></li>
+                    <li><a href="">Electric Cattles</a></li>
+                    <li><a href="">Food Choppers</a></li>
+                    <li><a href="">Toasters</a></li>
+    
+                  </ul>
+                </div>
+                <div class="dropdown-menu-first">
+    
+                  <ul>
+                    <h4>Food Storage</h4>
+                    <li>Flask</li>
+                    <li>Spice Jars</li>
+                    <li>Vaccum Bottles</li>
+                    <li>Lunch Boxes</li>
+                  </ul>
+                </div>
+    
+            </li>
+            <li> <a href="">Dealers</a></li>
+            <li> <a href="">Resources</a></li>
+            <li> <a href="">Contact Us</a> </li>
+          </ul>
+        </div>
+        <div class="right-nav">
+          <ul>
+            <li><i class="fa-solid fa-user"></i></li>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+            <li><i onclick="displaySearch()" class="fa-solid fa-magnifying-glass"></i></li>
+          </ul>
+        </div>
+      </div>
+    
+    
+    
+    
+      <div id="search-bar">
+        <div class="cross"><i onclick="closeSearchbar()" class="fa-sharp fa-solid fa-xmark fa-2x"></i></div>
+        <span>What are you looking for?</span>
+        <div><input type="search" placeholder="Search Products.."><i
+            class="fa-solid search-icon fa-magnifying-glass fa-2x"></i></div>
+      </div>
+
     <section id="products">
-        <h1>Bread Makers</h1>
+       
         <div id="cook-ware">
             <div class="cook-ware-items">
                 <div class="product-img">
@@ -203,6 +287,8 @@
             </div>
         </div>
     </section>
+
+    <script src="/js/index.js"></script>
 </body>
 
 </html>
