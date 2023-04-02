@@ -1,0 +1,21 @@
+.About-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 30px 20px;
+}
+.About-content-container>h1{
+    border-bottom: 1px solid rgb(150, 95, 95);
+}
+p{
+    text-align: center;
+    padding-top: 50px;
+    width: auto;
+}
+span{
+    padding-top: 50px;
+    font-weight: bold;
+}
