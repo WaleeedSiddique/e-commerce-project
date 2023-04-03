@@ -161,7 +161,7 @@ i:hover{
 } 
 .main-top-products a{flex: 1;}
 .left-top-products{
-    background-image: url("../images/built-in-kitchen-category-banner-1.webp");
+    background-image: url("../images/built-in-kitchen-category-banner-1.png");
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -174,14 +174,14 @@ i:hover{
     height: 100%;
 }
 .box-1-right-products{
-    background: url("../images/washing-machine-catgory-banner-1.webp");
+    background: url("../images/washing-machine-catgory-banner-1.jpg");
     height: 49.5%;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
 }
 .box-2-right-products{
-    background-image: url("../images/geyser-category-banner-1-1.webp");
+    background-image: url("../images/geyser-category-banner-1-1.jpg");
     height: 49%;
     margin-top: 7px;
     background-size: cover;
@@ -378,12 +378,12 @@ i:hover{
   padding: 50px ;
   /* position: relative; */
 }
-.icons-container{
-    /* float: right; */
+/* .icons-container{
+    float: right; */
     /* position: absolute; */
     /* right: 40px; */
-    /* top: 30px; */
-}
+    /* top: 30px;
+} */
 .icons-container span{
     padding-right: 12px;
     font-size: 20px;
