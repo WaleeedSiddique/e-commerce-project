@@ -54,6 +54,12 @@ body{
     opacity: 0.7;
 }
 
+.cook-ware-items>p:hover{
+    color: #8f8b8b;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
 .product-img {
     width: 250px;
     height: 250px;

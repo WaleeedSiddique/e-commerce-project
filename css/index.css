@@ -14,7 +14,7 @@
 a{text-decoration: none;color: black;}
 .logo{font-family: 'Pacifico', cursive;padding-left: 7px;}
 .logo sup{margin-left: -16px;}
-.left-nav{ display: inline-block;}
+/* .left-nav{ display: inline-block;} */
 body{font-family: 'Nunito', sans-serif; }
 ul{list-style: none;}
 /* one liner end */
@@ -26,6 +26,11 @@ ul{list-style: none;}
     display: flex;
     padding: 10px 0px;
     justify-content: space-between;
+    z-index: 2000;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    transition: all 1s;
     
 }
 
@@ -49,13 +54,23 @@ ul{list-style: none;}
 .right-nav ul{
     list-style: none;
     display: flex;
-    float: right;
+    /* float: right; */
     padding: 25px 0px;
 }
 .right-nav ul li:nth-child(1) ,.right-nav ul li:nth-child(2){
     padding-right: 10px;
     border-right: 1px solid black;
     margin-right: 10px;
+}
+.right-nav ul li:nth-child(4){
+    padding-left: 10px;
+    border-left: 1px solid black;
+    margin-left: 10px;
+}
+.toggle-button{
+    padding-left: 5px;
+    display: none;
+    /* border-left: 1px solid var(--most-used-clr); */
 }
 i:hover{
     cursor: pointer;
@@ -79,6 +94,7 @@ i:hover{
  top: -500px;
  z-index: 10;
  transition: all 1s;
+ z-index: 2500;
  
 }
 #search-bar input{
@@ -139,7 +155,7 @@ i:hover{
 
 /* new arrival section  */
 .main-top-products{
-    height: 90vh;
+    height: 100vh;
     display: flex;
     padding: 40px 20px ;
 } 
@@ -155,7 +171,7 @@ i:hover{
 }
 .right-top-products{
     flex: 1;
-    height: auto;
+    height: 100%;
 }
 .box-1-right-products{
     background: url("../images/washing-machine-catgory-banner-1.jpg");
@@ -167,7 +183,7 @@ i:hover{
 .box-2-right-products{
     background-image: url("../images/geyser-category-banner-1-1.jpg");
     height: 49%;
-    margin-top: 10px;
+    margin-top: 7px;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
@@ -197,7 +213,7 @@ i:hover{
 .box1, .box2, .box3, .box4{
     flex: 1;
     overflow: hidden;
-    height: 380px;
+    height: 385px;
     width: auto;
     padding-right: 10px;
     position: relative;
@@ -215,54 +231,53 @@ i:hover{
     background-color: var(--most-used-clr);
     color: var(--local-clr) !important; 
     padding: 10px;
-    /* margin-top: 20px;   */
-    position: absolute;  
-    top: 400px;
-    left: -20px;
+    position: relative; 
+    top: 40px;
     transition: all 0.5s;
     border-radius: 5px;
 } 
+
 .box4:hover .price{
     transform: translateY(50px);
     transition: all 0.5s;
 }
 .box4:hover .Add-cart-button{
-    top: 340px;
-    transform: translateX(20px);
+    top: 0px;
+    transform: translateY(20px);
 }
 .box3:hover .price{
     transform: translateY(50px);
     transition: all 0.5s;
 }
 .box3:hover .Add-cart-button{
-    top: 340px;
-    transform: translateX(20px);
+    top: 0px;
+    transform: translateY(20px);
 }
 .box2:hover .price{
     transform: translateY(50px);
     transition: all 0.5s;
 }
 .box2:hover .Add-cart-button{
-    top: 340px;
-    transform: translateX(20px);
+    top: 0px;
+    transform: translateY(20px);
 }
 .box1:hover .price{
     transform: translateY(50px);
     transition: all 2s;
 }
 .box1:hover .Add-cart-button{
-    top: 340px;
-    transform: translateX(20px);
+    top: 0px;
+    transform: translateY(20px);
 }
 .image-container{
     width: auto;
-    height: 100%;
+    height: auto;
 }
 /* feature section work  */
 .box1-feature, .box2-feature, .box3-feature, .box4-feature{
     flex: 1;
     overflow: hidden;
-    height: 380px;
+    height: 385px;
     padding-right: 10px;
     width: auto;
     position: relative;
@@ -273,24 +288,24 @@ i:hover{
     transition: all 0.5s;
 }
 .box4-feature:hover .Add-cart-button{
-    top: 340px;
-    transform: translateX(20px);
+    top: 0px;
+    transform: translateY(20px);
 }
 .box3-feature:hover .price{
     transform: translateY(50px);
     transition: all 0.5s;
 }
 .box3-feature:hover .Add-cart-button{
-    top: 340px;
-    transform: translateX(20px);
+    top: 0px;
+    transform: translateY(20px);
 }
 .box2-feature:hover .price{
     transform: translateY(50px);
     transition: all 0.5s;
 }
 .box2-feature:hover .Add-cart-button{
-    top: 340px;
-    transform: translateX(20px);
+    top: 0px;
+    transform: translateY(20px);
 }
 .box1-feature:hover .price{
     transform: translateY(50px);
@@ -298,8 +313,8 @@ i:hover{
    
 }
 .box1-feature:hover .Add-cart-button{
-    top: 340px;
-    transform: translateX(20px);
+    top: 0px;
+    transform: translateY(20px);
 }
 .sale-tag{
     background-color: var(--sale-clr) ;
@@ -319,7 +334,7 @@ i:hover{
     padding: 20px;
 }
 .image-container img{
-    height: 50%;
+    height: auto;
     width: 100%;
     opacity: 0.7;
 }
