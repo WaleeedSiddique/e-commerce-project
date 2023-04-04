@@ -25,12 +25,12 @@ ul{list-style: none;}
     /* background-color: aqua; */
     display: flex;
     padding: 10px 0px;
-    justify-content: space-between;
-    z-index: 2000;
-    position: sticky;
-    top: 0px;
-    left: 0px;
-    transition: all 1s;
+        justify-content: space-between;
+        z-index: 10;
+                position: sticky;
+                top: 0px;
+                left: 0px;
+        transition: all 1s;
     
 }
 
@@ -132,14 +132,14 @@ i:hover{
     width: auto;
     height: auto;
     position: absolute;
-    opacity: 0;
-    z-index: 100;
+    left: -1000px;
+    z-index: 1;
     display: flex;
     padding: 10px 0px;
     transition: ease-in 1s;
 }
 .show-dropdown{
-    opacity: 1;
+    left: 350px;
 }
 .dropdown-menu-first ul{
  display: flex;
