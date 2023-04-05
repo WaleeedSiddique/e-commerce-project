@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Nunito&family=Rajdhani&family=Ubuntu&display=swap');
+
+    /* font-family: 'Basic', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif; 
+    font-family: 'Rajdhani', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+#products>h1 {
+    font-size: 3.1rem;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#cook-ware {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,250px);
+    justify-content: center;
+    grid-gap: 25px;
+    margin: 0 30px;
+}
+
+
+.cook-ware-items{
+    font-family: 'Nunito', sans-serif;
+    /* font-size: 16px; */
+    font-weight: 500;
+}
+
+.cook-ware-items i{
+    color:rgb(0, 0, 0);
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+.product-img {
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    margin: 0 0 20px 0;
+    transition: all 0.5s;
+
+}
+
+
+.product-img img {
+    width: 200px;
+}
+
+
+.product-img:hover {
+    box-shadow: 0 0 5px #62626261;
+    transition: all 0.5s;
+}
+
+
+/* .product-img:hover img {
+    transform: scale(1.005);
+    transition: all 0.5s
+} */
+
+.price {
+    margin: 5px 0;
+    /* color: rgb(173, 174, 175); */
+    color: rgb(74, 82, 91);
+    transition: 0.5s;
+}
+
+.price-cart {
+    width: 150px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.btn {
+    background-color: #000000;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 50px;
+    transition: 0.5s;
+}
+
+.cook-ware-items:hover .btn {
+    transform: translate(0, -75px);
+    transition: all 0.5s;
+}
+
+.cook-ware-items:hover .price {
+    transform: translate(0, -50px);
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: #444444;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+/*..............Refrigerator CSS.........*/
+
+.freezer {
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    width: 207px !important;
+    height: 180px;
+}
+
+/*........Washing Machine CSS.......*/
+
+.w-m-size{
+    width: 45px !important;
+}

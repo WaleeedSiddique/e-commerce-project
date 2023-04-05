@@ -1,229 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/contactus.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="../css/mediaquery.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Contact Us</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/contactus.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="../css/mediaquery.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Contact Us</title>
 </head>
+
 <body>
-    <div class="nav">
-        <a class="logo" href="#">
-          <h1>Tashi <sup><i class="fa-solid fa-star fa-sm"></i></sup></h1>
-        </a>
-        <div class="left-nav">
-          <ul>
-            <li> <a href="">Home Tashi® </a></li>
-            <li onclick="displayDropdown()"> <a href="">Products </a><i class="fa-solid fa-caret-down"></i>
-              <div class="dropdown-menu" id="dropdown">
-                <div class="dropdown-menu-first">
-                  <ul>
-                    <h4><a href=""> Cookware~</a></h4>
-                    <li><a href=""> Pots </a></li>
-                    <li><a href=""> Pans </a></li>
-                    <li><a href="">Frying Pans </a></li>
-                    <li><a href="">Cookware Sets </a></li>
-                    <li><a href="">Handis </a></li>
-                    <li><a href="">Kadais </a></li>
-                    <li><a href="">Grill pains </a></li>
-                    <li><a href="">Tawas </a></li>
-                  </ul>
-                  <ul>
-                    <h4><a href=""> Refrigerations~</a><a href=""></h4>
-                    <li><a href=""> Freezers</a><a href=""></li>
-                    <li><a href=""> Refrigerators</a><a href=""></li>
-                  </ul>
-                </div>
-                <div class="dropdown-menu-first">
-    
-                  <ul>
-                    <h4><a href="">Appliances </a></h4>
-                    <li><a href="">Bread Maker</a></li>
-                    <li><a href="">Coffee Maker</a></li>
-                    <li><a href="">Ice-cream Maker</a></li>
-                    <li><a href="">Electric Cattles</a></li>
-                    <li><a href="">Food Choppers</a></li>
-                    <li><a href="">Toasters</a></li>
-    
-                  </ul>
-                </div>
-                <div class="dropdown-menu-first">
-    
-                  <ul>
-                    <h4>Food Storage</h4>
-                    <li>Flask</li>
-                    <li>Spice Jars</li>
-                    <li>Vaccum Bottles</li>
-                    <li>Lunch Boxes</li>
-                  </ul>
-                </div>
-    
-            </li>
-            <li> <a href="">Dealers</a></li>
-            <li> <a href="">Resources</a></li>
-            <li> <a href="">Contact Us</a> </li>
-          </ul>
-        </div>
-        <div class="right-nav">
-          <ul>
-            <li><i class="fa-solid fa-user"></i></li>
-            <li><i class="fa-solid fa-cart-shopping"></i></li>
-            <li><i onclick="displaySearch()" class="fa-solid fa-magnifying-glass"></i></li>
-            <li class="toggle-button"><i class="fa-sharp fa-solid fa-bars"></i></li>
-          </ul>
-        </div>
-      </div>
-    <div class="main-form-container">
-    <div class="form-container">
+  <!-- Navbar -->
 
-        <div class="form">
-            <h2>Contact Us</h2>
-            <table>
-            <form action="">
-                <tr><td><h4>Name</h4></td></tr>
-                <tr><td><input type="text" placeholder="Write Your Full Name Here"></td></tr>
-                <tr><td><h4>Email</h4></td></tr>
-                <tr><td><input type="email" placeholder="Write Your Email Here"></td></tr>
-                <tr><td><h4>Phone</h4></td></tr>
-                <tr><td><input type="tel" placeholder="Write Your Phone Number Here"></td></tr>
-                <tr><td><h4>Message</h4></td></tr>
-                <tr><td><input type="text" placeholder="Message"></td></tr>
-                <tr><td><button class="submit-btn">Submit</button></td></tr>
-            </form>
-        </table>
-        </div>
-        <div class="map-div"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57893.655751834405!2d67.06283082173752!3d24.92002522463118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338fa00456acf%3A0x7a277bdfeb6b99aa!2sGulistan-e-Johar%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1679850743175!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-    </div>
-</div>
-
-
-
-
-
-
-    <div class="footer-main-container">
-        <div class="icons-container">
-          <span><i class="fa-brands fa-twitter"></i></span>
-          <span><i class="fa-brands fa-instagram"></i></span>
-          <span><i class="fa-brands fa-facebook-f"></i></span>
-          <span><i class="fa-brands fa-youtube"></i></span>
-          <span><i class="fa-brands fa-pinterest-p"></i></span>
-        </div>
-        <div class="sub-footer">
-          <div class="first">
-            <h5>Collection</h5>
-            <div>
+  <div class="nav" id="navbar">
+    <a class="logo" href="#">
+      <h1><i class="fa-solid fa-kitchen-set"></i>Tasha</h1>
+      <p>Kitchen Appliances</p>
+    </a>
+    <div class="left-nav">
+      <ul>
+        <li> <a href="/index.html">Home Tashi</a></li>
+        <li onclick="displayDropdown()"> <a id="drop" href="">Products </a><i class="fa-solid fa-caret-down"></i>
+          <div class="dropdown-menu" id="dropdown">
+            <div class="dropdown-menu-first">
               <ul>
-                <li>Masterpiece <sup>®</sup></li>
-                <li>Collection</li>
+                <h4>Cookware~</h4>
+                <li><a href="/pages/cooking-pot-folder/cooking-pot.html"> Pots </a></li>
+                <li><a href="/pages/cooking-pan-folder/cooking-pan.html"> Pans </a></li>
+                <li><a href="/pages/cooking-grill-pan-folder/grill-pan.html">Grill pans </a></li>
               </ul>
               <ul>
-                <li>Professional Collection</li>
-                <li>Compare Collection</li>
+                <h4> Refrigerations~</h4>
+                <li><a href="/pages/refrigerator-folder/refrigerator.html"> Refrigerators</a><a href=""></li>
               </ul>
             </div>
-          </div>
-          <div class="second">
-            <h5>Products</h5>
-            <div>
+            <div class="dropdown-menu-first">
+
               <ul>
-                <li>Refrigeration</li>
-                <li>Ranges</li>
-                <li>Oven</li>
-                <li>Cookpots & Rangetops</li>
+                <h4><a href="">Appliances </a></h4>
+                <li><a href="/pages/bread-maker-folder/bread-maker.html">Bread Maker</a></li>
+                <li><a href="/pages/cofee-maker-folder/cofee-maker.html">Coffee Maker</a></li>
+                <li><a href="/pages/ice-cream-maker-folder/ice-cream-maker.html">Ice-cream Maker</a></li>
+                <li><a href="/pages/electric-kettles-folder/electric-kettles.html">Electric Cattles</a></li>
+                <li><a href="/pages/food-chooper-folder/food-chopper.html">Food Choppers</a></li>
+                <li><a href="/pages/toaster-folder/toaster.html">Toasters</a></li>
+
               </ul>
+            </div>
+            <div class="dropdown-menu-first">
+
               <ul>
-                <li>Dishwasher</li>
-                <li>Ventilation</li>
-                <li>Coffee Machine</li>
+                <h4>Food Storage</h4>
+                <li>Flask</li>
+                <li> <a href="/pages/spice-jars-folder/spice-jar.html">Spice Jars</a> </li>
+                <li>Vaccum Bottles</li>
+                <li>Lunch Boxes</li>
               </ul>
-          </div>
-        </div>
-          <div class="third">
-            <h5>Build & Design</h5>
-            <div>
-              <ul>
-                <li>Star Partner Program</li>
-                <li>CAD library</li>
-                <li>Gift with Purchase</li>
-              </ul>
-              <ul>
-                <li>Builder Resources</li>
-                <li>Brouchers</li>
-              </ul>
-          </div>
-          </div>
-        
+            </div>
+
+        </li>
+        <li> <a href="">Dealers</a></li>
+        <li> <a href="">Resources</a></li>
+        <li> <a href="pages/contactus.html">Contact Us</a> </li>
+      </ul>
+    </div>
+    <div class="right-nav">
+      <ul>
+        <li><i class="fa-solid fa-user"></i></li>
+        <li><i class="fa-solid fa-cart-shopping"></i></li>
+        <li><i onclick="displaySearch()" class="fa-solid fa-magnifying-glass"></i></li>
+        <li class="toggle-button"><i class="fa-sharp fa-solid fa-bars"></i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main-form-container">
+    <div class="form-container">
+
+      <div class="form">
+        <h2>Contact Us</h2>
+        <table>
+          <form action="">
+            <tr>
+              <td>
+                <h4>Name</h4>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="text" placeholder="Write Your Full Name Here"></td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Email</h4>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="email" placeholder="Write Your Email Here"></td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Phone</h4>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="tel" placeholder="Write Your Phone Number Here"></td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Message</h4>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="text" placeholder="Message"></td>
+            </tr>
+            <tr>
+              <td><button class="submit-btn">Submit</button></td>
+            </tr>
+          </form>
+        </table>
       </div>
-      <div class="sub-footer">
-        <div class="first">
-          <h5>Experience</h5>
-          <div>
-            <ul>
-              <li>Showrooms</li>
-              <li>Inspirational Designs</li>
-              <li>Look Backs</li>
-              <li>Gift with Purchase</li>
-              <li>Leap into Luxury</li>
-            </ul>
-            <ul>
-              <li>Blog</li>
-              <li>Recipes</li>
-              <li>Sign Up</li>
-              <li>Newsletter Signup</li>
-              <li>Press</li>
-            </ul>
-          </div>
-        </div>
-        <div class="second">
-          <h5>Support</h5>
-          <div>
-            <ul>
-              <li>Product Registration</li>
-              <li>Owner Manuals</li>
-              <li>Warranties</li>
-              <li>How-To-Videos</li>
-              <li>Find a Servicer</li>
-              <li>Customer Care</li>
-              <li>Filters, Cleaners <br>& Accessories</li>
-            </ul>
-            <ul>
-              <li>Service & Repairs</li>
-              <li>Contact Us</li>
-              <li>Safety Notices</li>
-              <li>ADA Website</li>
-              <li>Compliance</li>
-            </ul>
+      <div class="map-div"><iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57893.655751834405!2d67.06283082173752!3d24.92002522463118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338fa00456acf%3A0x7a277bdfeb6b99aa!2sGulistan-e-Johar%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1679850743175!5m2!1sen!2s"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="footer-main-container">
+    <div class="icons-container">
+      <span><i class="fa-brands fa-twitter"></i></span>
+      <span><i class="fa-brands fa-instagram"></i></span>
+      <span><i class="fa-brands fa-facebook-f"></i></span>
+      <span><i class="fa-brands fa-youtube"></i></span>
+      <span><i class="fa-brands fa-pinterest-p"></i></span>
+    </div>
+    <div class="sub-footer">
+      <div class="first">
+        <h5>Collection</h5>
+        <div>
+          <ul>
+            <li>Masterpiece <sup>®</sup></li>
+            <li>Collection</li>
+          </ul>
+          <ul>
+            <li>Professional Collection</li>
+            <li>Compare Collection</li>
+          </ul>
         </div>
       </div>
-        <div class="third">
-          <h5>Product FAQs </h5>
-          <div>
-            <ul>
-              <li>Dishwasher FAQs</li>
-              <li>Oven FAQs</li>
-              <li>Steam Oven FAQs</li>
-              <li>Refrigeration FAQs</li>
-            
-            </ul>
-            <ul>
-              <li>Electric Cooktop FAQs</li>
-              <li>Gas Cooktop FAQs</li>
-              <li>Ventilation FAQs</li>
-              <li>Range FAQs</li>
-            </ul>
-        </div>
+      <div class="second">
+        <h5>Products</h5>
+        <div>
+          <ul>
+            <li>Refrigeration</li>
+            <li>Ranges</li>
+            <li>Oven</li>
+            <li>Cookpots & Rangetops</li>
+          </ul>
+          <ul>
+            <li>Dishwasher</li>
+            <li>Ventilation</li>
+            <li>Coffee Machine</li>
+          </ul>
         </div>
       </div>
+      <div class="third">
+        <h5>Build & Design</h5>
+        <div>
+          <ul>
+            <li>Star Partner Program</li>
+            <li>CAD library</li>
+            <li>Gift with Purchase</li>
+          </ul>
+          <ul>
+            <li>Builder Resources</li>
+            <li>Brouchers</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="sub-footer">
+      <div class="first">
+        <h5>Experience</h5>
+        <div>
+          <ul>
+            <li>Showrooms</li>
+            <li>Inspirational Designs</li>
+            <li>Look Backs</li>
+            <li>Gift with Purchase</li>
+            <li>Leap into Luxury</li>
+          </ul>
+          <ul>
+            <li>Blog</li>
+            <li>Recipes</li>
+            <li>Sign Up</li>
+            <li>Newsletter Signup</li>
+            <li>Press</li>
+          </ul>
+        </div>
+      </div>
+      <div class="second">
+        <h5>Support</h5>
+        <div>
+          <ul>
+            <li>Product Registration</li>
+            <li>Owner Manuals</li>
+            <li>Warranties</li>
+            <li>How-To-Videos</li>
+            <li>Find a Servicer</li>
+            <li>Customer Care</li>
+            <li>Filters, Cleaners <br>& Accessories</li>
+          </ul>
+          <ul>
+            <li>Service & Repairs</li>
+            <li>Contact Us</li>
+            <li>Safety Notices</li>
+            <li>ADA Website</li>
+            <li>Compliance</li>
+          </ul>
+        </div>
+      </div>
+      <div class="third">
+        <h5>Product FAQs </h5>
+        <div>
+          <ul>
+            <li>Dishwasher FAQs</li>
+            <li>Oven FAQs</li>
+            <li>Steam Oven FAQs</li>
+            <li>Refrigeration FAQs</li>
+
+          </ul>
+          <ul>
+            <li>Electric Cooktop FAQs</li>
+            <li>Gas Cooktop FAQs</li>
+            <li>Ventilation FAQs</li>
+            <li>Range FAQs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="../js/index.js"></script>
 </body>
+
 </html>

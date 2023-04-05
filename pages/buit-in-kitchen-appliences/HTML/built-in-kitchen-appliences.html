@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/cookware.css">
+    <link rel="stylesheet" href="/CSS/utilities.css">
+    <link rel="icon" href="/IMAGES/tasha-title-icon.png">
+    <link rel="stylesheet" href="/CSS/built-in-kitchen-appliences.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="/pages/buit-in-kitchen-appliences/CSS/pagination.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/mediaquery.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<div class="nav" id="navbar">
+  <a class="logo" href="#">
+    <h1><i class="fa-solid fa-kitchen-set"></i>Tasha</h1>
+    <p>Kitchen Appliances</p>
+  </a>
+  <div class="left-nav">
+    <ul>
+      <li> <a href="index.html">Home Tashi</a></li>
+      <li  onclick="displayDropdown()"> <a id="drop" href="">Products </a><i class="fa-solid fa-caret-down"></i>
+        <div class="dropdown-menu" id="dropdown">
+          <div class="dropdown-menu-first">
+            <ul>
+              <h4>Cookware~</h4>
+              <li><a href="/pages/cooking-pot-folder/cooking-pot.html"> Pots </a></li>
+              <li><a href="/pages/cooking-pan-folder/cooking-pan.html"> Pans </a></li>
+              <li><a href="/pages/cooking-grill-pan-folder/grill-pan.html">Grill pans </a></li>
+            </ul>
+            <ul>
+              <h4> Refrigerations~</h4>
+              <li><a href="/pages/refrigerator-folder/refrigerator.html"> Refrigerators</a><a href=""></li>
+            </ul>
+          </div>
+          <div class="dropdown-menu-first">
+            <ul>
+              <h4><a href="">Appliances </a></h4>
+              <li><a href="pages/bread-maker-folder/bread-maker.html">Bread Maker</a></li>
+              <li><a href="pages/cofee-maker-folder/cofee-maker.html">Coffee Maker</a></li>
+              <li><a href="pages/ice-cream-maker-folder/ice-cream-maker.html">Ice-cream Maker</a></li>
+              <li><a href="/pages/electric-kettles-folder/electric-kettles.html">Electric Cattles</a></li>
+              <li><a href="/pages/food-chooper-folder/food-chopper.html">Food Choppers</a></li>
+              <li><a href="/pages/toaster-folder/toaster.html">Toasters</a></li>
+            </ul>
+          </div>
+          <div class="dropdown-menu-first">
+            <ul>
+              <h4>Food Storage</h4>
+              <li>Flask</li>
+              <li> <a href="/pages/spice-jars-folder/spice-jar.html">Spice Jars</a> </li>
+              <li>Vaccum Bottles</li>
+              <li>Lunch Boxes</li>
+            </ul>
+          </div>
+      </li>
+      <li> <a href="">Dealers</a></li>
+      <li> <a href="">Resources</a></li>
+      <li> <a href="pages/contactus.html">Contact Us</a> </li>
+    </ul>
+  </div>
+  <div class="right-nav">
+    <ul>
+      <li><i class="fa-solid fa-user"></i></li>
+      <li><i class="fa-solid fa-cart-shopping"></i></li>
+      <li><i onclick="displaySearch()" class="fa-solid fa-magnifying-glass"></i></li>
+      <li class="toggle-button"><i class="fa-sharp fa-solid fa-bars"></i></li>
+    </ul>
+  </div>
+</div>
+
+      <div id="search-bar">
+        <div class="cross"><i onclick="closeSearchbar()" class="fa-sharp fa-solid fa-xmark fa-2x"></i></div>
+        <span>What are you looking for?</span>
+        <div><input type="search" placeholder="Search Products.."><i
+            class="fa-solid search-icon fa-magnifying-glass fa-2x"></i></div>
+      </div>
+
+    <section id="products">
+        <div id="cook-ware">
+            <div class="cook-ware-items">
+                <div class="product-img">
+                    <img src="/pages/buit-in-kitchen-appliences/IMAGES/built-in-kitchen-appliences-1.jpg" alt="">
+                </div>
+                <p>Tasha Electric Oven F86ETIX</p>
+                <div class="rating">
+                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <div class="price-cart">
+                    <p class="price">Rs 107,000</p>
+                    <button class="btn">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="cook-ware-items">
+                <div class="product-img">
+                    <img src="/pages/buit-in-kitchen-appliences/IMAGES/built-in-kitchen-appliences-2.jpg" alt="">
+                </div>
+                <p>Tasha Built In Oven F65TIX BLACK</p>
+                <div class="rating">
+                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <div class="price-cart">
+                    <p class="price">Rs 81,500</p>
+                    <button class="btn">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="cook-ware-items">
+                <div class="product-img">
+                    <img src="/pages/buit-in-kitchen-appliences/IMAGES/built-in-kitchen-appliences-3.jpg" alt="">
+                </div>
+                <p>Tasha Kitchen Hood MTD-CT 9003</p>
+                <div class="rating">
+                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <div class="price-cart">
+                    <p class="price">Rs 28,000</p>
+                    <button class="btn">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="cook-ware-items">
+                <div class="product-img">
+                    <img src="/pages/buit-in-kitchen-appliences/IMAGES/built-in-kitchen-appliences-4.jpg" alt="">
+                </div>
+                <p>Tasha Built-in Refrigerator B-808</p>
+                <div class="rating">
+                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <div class="price-cart">
+                    <p class="price">Rs 245,000</p>
+                    <button class="btn">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="cook-ware-items">
+                <div class="product-img">
+                    <img src="/pages/buit-in-kitchen-appliences/IMAGES/built-in-kitchen-appliences-5.jpg" alt="">
+                </div>
+                <p>Tasha Kitchen Hood C-6002-Manual 60cm</p>
+                <div class="rating">
+                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <div class="price-cart">
+                    <p class="price">Rs 42,500</p>
+                    <button class="btn">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="cook-ware-items">
+                <div class="product-img">
+                    <img src="/pages/buit-in-kitchen-appliences/IMAGES/built-in-kitchen-appliences-6.jpg" alt="">
+                </div>
+                <p>Tasha Kitchen Hood JH-HX6001 Black 60cm</p>
+                <div class="rating">
+                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <div class="price-cart">
+                    <p class="price">25,500</p>
+                    <button class="btn">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="cook-ware-items">
+                <div class="product-img">
+                    <img src="/pages/buit-in-kitchen-appliences/IMAGES/built-in-kitchen-appliences-7.jpg" alt="">
+                </div>
+                <p>Tasha N104S Automatic Kitchen Hob 3-Burners</p>
+                <div class="rating">
+                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <div class="price-cart">
+                    <p class="price">Rs 31,500</p>
+                    <button class="btn">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="cook-ware-items">
+                <div class="product-img">
+                    <img src="/pages/buit-in-kitchen-appliences/IMAGES/built-in-kitchen-appliences-8.jpg" alt="">
+                </div>
+                <p>Tasha Kitchen Double Hood ISLTW2R Round Shape</p>
+                <div class="rating">
+                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <div class="price-cart">
+                    <p class="price">Rs 124,999</p>
+                    <button class="btn">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="cook-ware-items">
+                <div class="product-img">
+                    <img src="/pages/buit-in-kitchen-appliences/IMAGES/built-in-kitchen-appliences-9.jpg" alt="">
+                </div>
+                <p>KITCHEN HOOD DM-101C60P BLACK</p>
+                <div class="rating">
+                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <div class="price-cart">
+                    <p class="price">Rs 37,500</p>
+                    <button class="btn">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="cook-ware-items">
+                <div class="product-img">
+                    <img src="/pages/buit-in-kitchen-appliences/IMAGES/built-in-kitchen-appliences-10.jpg" alt="">
+                </div>
+                <p>KITCHEN HOB PFM950STX-E </p>
+                <div class="rating">
+                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <div class="price-cart">
+                    <p class="price">Rs 85,000</p>
+                    <button class="btn">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="cook-ware-items">
+                <div class="product-img">
+                    <img src="/pages/buit-in-kitchen-appliences/IMAGES/built-in-kitchen-appliences-11.jpg" alt="">
+                </div>
+                <p>KITCHEN HOB PFM950STX-E</p>
+                <div class="rating">
+                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <div class="price-cart">
+                    <p class="price">Rs 85,000</p>
+                    <button class="btn">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="cook-ware-items">
+                <div class="product-img">
+                    <img src="/pages/buit-in-kitchen-appliences/IMAGES/built-in-kitchen-appliences-12.jpg" alt="">
+                </div>
+                <p>Tasha Kitchen Hood HCF-52 Canopy Design</p>
+                <div class="rating">
+                    <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i>
+                </div>
+                <div class="price-cart">
+                    <p class="price">Rs 70,000</p>
+                    <button class="btn">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="pagination">
+        <a href="/pages/buit-in-kitchen-appliences/HTML/built-in-kitchen-appliences.html">
+            <li><i class="fa-solid fa-arrow-left"></i></li>
+        </a>
+        <a href="/pages/buit-in-kitchen-appliences/HTML/built-in-kitchen-appliences.html">
+            <li class="first-page">1</li>
+        </a>
+        <a href="/pages/buit-in-kitchen-appliences/HTML/built-in-kitchen-appliences-2.html">
+            <li>2</li>
+        </a>
+        <a href="/pages/buit-in-kitchen-appliences/HTML/built-in-kitchen-appliences-2.html">
+            <li><i class="fa-solid fa-arrow-right"></i></li>
+        </a>
+    </div>
+
+     <!-- Footer -->
+
+  <div class="footer-main-container">
+    <div class="icons-container">
+      <span><i class="fa-brands fa-twitter"></i></span>
+      <span><i class="fa-brands fa-instagram"></i></span>
+      <span><i class="fa-brands fa-facebook-f"></i></span>
+      <span><i class="fa-brands fa-youtube"></i></span>
+      <span><i class="fa-brands fa-pinterest-p"></i></span>
+    </div>
+
+
+    <div class="sub-footer">
+      <div class="first">
+        <h5>Collection</h5>
+        <div>
+          <ul>
+            <li>Masterpiece <sup>®</sup></li>
+            <li>Collection</li>
+          </ul>
+          <ul>
+            <li>Professional Collection</li>
+            <li>Compare Collection</li>
+          </ul>
+        </div>
+      </div>
+      <div class="second">
+        <h5>Products</h5>
+        <div>
+          <ul>
+            <li>Refrigeration</li>
+            <li>Ranges</li>
+            <li>Oven</li>
+            <li>Cookpots & Rangetops</li>
+          </ul>
+          <ul>
+            <li>Dishwasher</li>
+            <li>Ventilation</li>
+            <li>Coffee Machine</li>
+          </ul>
+        </div>
+      </div>
+      <div class="third">
+        <h5>Build & Design</h5>
+        <div>
+          <ul>
+            <li>Star Partner Program</li>
+            <li>CAD library</li>
+            <li>Gift with Purchase</li>
+          </ul>
+          <ul>
+            <li>Builder Resources</li>
+            <li>Brouchers</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="sub-footer">
+      <div class="first">
+        <h5>Experience</h5>
+        <div>
+          <ul>
+            <li>Showrooms</li>
+            <li>Inspirational Designs</li>
+            <li>Look Backs</li>
+            <li>Gift with Purchase</li>
+            <li>Leap into Luxury</li>
+          </ul>
+          <ul>
+            <li>Blog</li>
+            <li>Recipes</li>
+            <li>Sign Up</li>
+            <li>Newsletter Signup</li>
+            <li>Press</li>
+          </ul>
+        </div>
+      </div>
+      <div class="second">
+        <h5>Support</h5>
+        <div>
+          <ul>
+            <li>Product Registration</li>
+            <li>Owner Manuals</li>
+            <li>Warranties</li>
+            <li>How-To-Videos</li>
+            <li>Find a Servicer</li>
+            <li>Customer Care</li>
+            <li>Filters, Cleaners <br>& Accessories</li>
+          </ul>
+          <ul>
+            <li>Service & Repairs</li>
+            <li>Contact Us</li>
+            <li>Safety Notices</li>
+            <li>ADA Website</li>
+            <li>Compliance</li>
+          </ul>
+        </div>
+      </div>
+      <div class="third">
+        <h5>Product FAQs </h5>
+        <div>
+          <ul>
+            <li>Dishwasher FAQs</li>
+            <li>Oven FAQs</li>
+            <li>Steam Oven FAQs</li>
+            <li>Refrigeration FAQs</li>
+
+          </ul>
+          <ul>
+            <li>Electric Cooktop FAQs</li>
+            <li>Gas Cooktop FAQs</li>
+            <li>Ventilation FAQs</li>
+            <li>Range FAQs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
