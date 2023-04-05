@@ -28,3 +28,8 @@ function scroll() {
         nav.style.backgroundColor = "transparent";
     }
 }
+
+function showsidebar(){
+    let a = document.getElementById("nav").classList.toggle("left-nav-show")
+    
+}

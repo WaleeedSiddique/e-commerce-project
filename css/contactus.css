@@ -13,8 +13,8 @@ body{
     width: auto;
     height: auto;
     display: flex;
-     padding:0px 60px 0px 60px ;
-     justify-content: center;
+    padding:0px 60px 0px 60px ;
+    justify-content: center;
 }
 .form{
     width: auto;
@@ -23,7 +23,7 @@ body{
     flex: 1;
 }
 .map-div{
-    flex: 1;
+    flex: 2;
     width: auto;
     height: auto;
 }
@@ -35,7 +35,7 @@ input{
     background-color: inherit;
     height: 20px;
     font-size: 15px;
-    width: 250px;
+    width: auto;
     margin-bottom: 20px;
 }
 .submit-btn{
