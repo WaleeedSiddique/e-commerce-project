@@ -82,9 +82,7 @@
 }
 @media screen and (max-width: 800px) and (min-width:350px){
 
-    .left-nav{
-        display: none;
-    }
+    
     .main-top-products{
         flex-direction: column;
     }
