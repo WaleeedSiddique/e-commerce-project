@@ -33,3 +33,9 @@ function showsidebar(){
     let a = document.getElementById("nav").classList.toggle("left-nav-show")
     
 }
+function scrollToTop() {
+    const scrollPosition = window.pageYOffset;
+      window.scrollTo(0, 0);
+  }
+    
+  

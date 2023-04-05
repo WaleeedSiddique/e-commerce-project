@@ -133,12 +133,16 @@ i:hover{
     width: auto;
     height: auto;
     position: absolute;
-    left: -1000px;
+    left: -1070px;
     z-index: 1;
     display: flex;
     padding: 10px 0px;
     transition: ease-in 1s;
 }
+html {
+    scroll-behavior: smooth;
+  }
+  
 .show-dropdown{
     left: 350px;
 }
